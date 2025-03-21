@@ -52,7 +52,7 @@
             <div class="control_panel">
                 <h2 class="container__title--less">Отзывы Наших Клиентов</h2>
                 <div class="container__container_button">
-                    <button class="container_button__button_action container_button__button_action--focus">
+                    <button class="container_button__button_action container_button__button_action--disabled">
                         <span class="material-symbols-outlined">arrow_back_ios</span>
                     </button>
 
@@ -72,7 +72,7 @@
 
                         <div class="viewer_feedback__container">
                             <div class="viewer_feedback__container_personal_info">
-                                <div class="viewer_feedback__avatar viewer_feedback__avatar--man"></div>
+                                <div class="viewer_feedback__avatar" data-image="man"></div>
 
                                 <div class="viewer_feedback__personal_info">
                                     <h3>Семья Оскаров</h3>
@@ -80,7 +80,7 @@
                                 </div>
                             </div>
                             
-                            <button class="container_button__button_media">
+                            <button class="container_button__button_like" id="man">
                                 <span class="material-symbols-outlined">thumb_up</span>
                             </button>
                         </div>
@@ -94,7 +94,7 @@
 
                         <div class="viewer_feedback__container">
                             <div class="viewer_feedback__container_personal_info">
-                                <div class="viewer_feedback__avatar viewer_feedback__avatar--woman"></div>
+                                <div class="viewer_feedback__avatar" data-image="woman"></div>
 
                                 <div class="viewer_feedback__personal_info">
                                     <h3>Анжела Франц</h3>
@@ -102,28 +102,7 @@
                                 </div>
                             </div>
                             
-                            <button class="container_button__button_media">
-                                <span class="material-symbols-outlined">thumb_up</span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="viewer_feedback__feedback">
-                        <p class="viewer_feedback__description">
-                            Наше семейное путешествие, организованное Journeey,
-                            было просто потрясающим. Каждая деталь была тщательно спланирована.
-                        </p>
-
-                        <div class="viewer_feedback__container">
-                            <div class="viewer_feedback__container_personal_info">
-                                <div class="viewer_feedback__avatar viewer_feedback__avatar--man"></div>
-
-                                <div class="viewer_feedback__personal_info">
-                                    <h3>Семья Оскаров</h3>
-                                    <p class="viewer_feedback__description">Делавер (DE)</p>
-                                </div>
-                            </div>
-                            
-                            <button class="container_button__button_media">
+                            <button class="container_button__button_like" id="woman">
                                 <span class="material-symbols-outlined">thumb_up</span>
                             </button>
                         </div>
@@ -131,29 +110,75 @@
 
                     <div class="viewer_feedback__feedback">
                         <p class="viewer_feedback__description">
-                            Индивидуальный маршрут по Японии был идеальным
-                            сочетанием культуры, приключений и отдыха.
+                            Незабываемое путешествие в Италию!
+                            Всё организовано на высшем уровне,
+                            от перелётов до экскурсий. 
+                            Спасибо Journeey за яркие впечатления!
                         </p>
 
                         <div class="viewer_feedback__container">
                             <div class="viewer_feedback__container_personal_info">
-                                <div class="viewer_feedback__avatar viewer_feedback__avatar--woman"></div>
+                                <div class="viewer_feedback__avatar" data-image="man_1"></div>
 
                                 <div class="viewer_feedback__personal_info">
-                                    <h3>Анжела Франц</h3>
-                                    <p class="viewer_feedback__description">Колорадо (CO)</p>
+                                    <h3>Томас Рид</h3>
+                                    <p class="viewer_feedback__description">Техас (TX)</p>
                                 </div>
                             </div>
                             
-                            <button class="container_button__button_media">
+                            <button class="container_button__button_like" id="man_1">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="viewer_feedback__feedback">
+                        <p class="viewer_feedback__description">
+                            Путешествие в Норвегию превзошло ожидания:
+                            живописные фьорды, интересные гиды и идеальная логистика.
+                        </p>
+
+                        <div class="viewer_feedback__container">
+                            <div class="viewer_feedback__container_personal_info">
+                                <div class="viewer_feedback__avatar" data-image="woman_1"></div>
+
+                                <div class="viewer_feedback__personal_info">
+                                    <h3>Семья Кларк</h3>
+                                    <p class="viewer_feedback__description">Вашингтон (WA)</p>
+                                </div>
+                            </div>
+                            
+                            <button class="container_button__button_like" id="woman_1">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="viewer_feedback__feedback">
+                        <p class="viewer_feedback__description">
+                            Спасибо за мечту, ставшую реальностью в Греции!
+                            Всё чётко, безопасно и с душой.
+                        </p>
+
+                        <div class="viewer_feedback__container">
+                            <div class="viewer_feedback__container_personal_info">
+                                <div class="viewer_feedback__avatar" data-image="man_2"></div>
+
+                                <div class="viewer_feedback__personal_info">
+                                    <h3>Майкл Браун</h3>
+                                    <p class="viewer_feedback__description">Иллинойс (IL)</p>
+                                </div>
+                            </div>
+                            
+                            <button class="container_button__button_like" id="man_2">
                                 <span class="material-symbols-outlined">thumb_up</span>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
+    <script src="./index.js"></script>
 </body>
 </html>
