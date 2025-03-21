@@ -4,78 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jorneey</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-    <header>
-        <img></img>
+    <header class="header">
+        <div class="container_logo">
+            <div class="container_logo__logo"></div>
+            <h1 class="container_logo__logo_text">Journeey</h1>
+        </div>
 
-        <nav>
-            <a>Главная</a>
-            <a>Туры</a>
-            <a>Направления</a>
-            <a>Гид</a>
-            <a>О нас</a>
+        <nav class="navigator">
+            <a class="navigator__link navigator__link--chosen">Главная</a>
+            <a class="navigator__link">Туры</a>
+            <a class="navigator__link">Направления</a>
+            <a class="navigator__link">Гид</a>
+            <a class="navigator__link">О нас</a>        
         </nav>
 
-        <div>
-            <button>I</button>
-            <button>Начать</button>
+        <div class="container_button container_button--header">
+            <button class="container_button__button_media">
+                <span class="material-symbols-outlined">photo_camera</span>
+            </button>
+            <button class="container_button__button_action">Начать</button>
         </div>
     </header>
-    <section>
-        <div>
-            <h1>Исследуй, Испытай<h1>
+    <section class="section_hero">
+        <div class="container">
+            <h1 class="container__title">Исследуй, Испытай<h1>
 
-            <p>
+            <p class="container__description">
             Отправляйтесь в Путешествие по Чудесам: Совершая Эксклюзивные
             Туры и Обогащаясь Впечатлениями от Путешествий, о которых 
             Мечтают Все Путешественники вместе с Journeey
             </p>
 
-            <div>
-                <button>Забронировать</button>
-                <button>Видео</button>
+            <div class="container_button">
+                <button class="container_button__button_action">Забронировать</button>
+                <button class="container_button__button_media">
+                    <span class="material-symbols-outlined">play_circle</span>
+                    Видео
+                </button>
             </div>
         </div>
 
-        <div>
-            <div>
-                <h2>Отзывы Наших Клиентов</h2>
-                <button><</button>
-                <button>></button>
+        <div class="container">
+            <div class="control_panel">
+                <h2 class="container__title--less">Отзывы Наших Клиентов</h2>
+                <div class="container__container_button">
+                    <button class="container_button__button_action container_button__button_action--focus">
+                        <span class="material-symbols-outlined">arrow_back_ios</span>
+                    </button>
+
+                    <button class="container_button__button_action">
+                        <span class="material-symbols-outlined">arrow_forward_ios</span>
+                    </button>
+                </div>
             </div>
 
-            <div>
-                <div>
-                    <p>
-                    </p>
+            <div class="viewer_feedback">
+                <div class="viewer_feedback__scroll">
+                    <div class="viewer_feedback__feedback">
+                        <p class="viewer_feedback__description">
+                            Наше семейное путешествие, организованное Journeey,
+                            было просто потрясающим. Каждая деталь была тщательно спланирована.
+                        </p>
 
-                    <img></img>
+                        <div class="viewer_feedback__container">
+                            <div class="viewer_feedback__container_personal_info">
+                                <div class="viewer_feedback__avatar viewer_feedback__avatar--man"></div>
 
-                    <div>
-                        <h3></h3>
-                        <p></p>
-                    </div>
-
-                    <button></button>
-                </div>
-
-                <div>
-                    <p>
-                    </p>
-
-                    <div>
-                        <img></img>
-
-                        <div>
-                            <h3></h3>
-                            <p></p>
+                                <div class="viewer_feedback__personal_info">
+                                    <h3>Семья Оскаров</h3>
+                                    <p class="viewer_feedback__description">Делавер (DE)</p>
+                                </div>
+                            </div>
+                            
+                            <button class="container_button__button_media">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                            </button>
                         </div>
+                    </div>
 
-                        <button></button>
+                    <div class="viewer_feedback__feedback">
+                        <p class="viewer_feedback__description">
+                            Индивидуальный маршрут по Японии был идеальным
+                            сочетанием культуры, приключений и отдыха.
+                        </p>
+
+                        <div class="viewer_feedback__container">
+                            <div class="viewer_feedback__container_personal_info">
+                                <div class="viewer_feedback__avatar viewer_feedback__avatar--woman"></div>
+
+                                <div class="viewer_feedback__personal_info">
+                                    <h3>Анжела Франц</h3>
+                                    <p class="viewer_feedback__description">Колорадо (CO)</p>
+                                </div>
+                            </div>
+                            
+                            <button class="container_button__button_media">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="viewer_feedback__feedback">
+                        <p class="viewer_feedback__description">
+                            Наше семейное путешествие, организованное Journeey,
+                            было просто потрясающим. Каждая деталь была тщательно спланирована.
+                        </p>
+
+                        <div class="viewer_feedback__container">
+                            <div class="viewer_feedback__container_personal_info">
+                                <div class="viewer_feedback__avatar viewer_feedback__avatar--man"></div>
+
+                                <div class="viewer_feedback__personal_info">
+                                    <h3>Семья Оскаров</h3>
+                                    <p class="viewer_feedback__description">Делавер (DE)</p>
+                                </div>
+                            </div>
+                            
+                            <button class="container_button__button_media">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="viewer_feedback__feedback">
+                        <p class="viewer_feedback__description">
+                            Индивидуальный маршрут по Японии был идеальным
+                            сочетанием культуры, приключений и отдыха.
+                        </p>
+
+                        <div class="viewer_feedback__container">
+                            <div class="viewer_feedback__container_personal_info">
+                                <div class="viewer_feedback__avatar viewer_feedback__avatar--woman"></div>
+
+                                <div class="viewer_feedback__personal_info">
+                                    <h3>Анжела Франц</h3>
+                                    <p class="viewer_feedback__description">Колорадо (CO)</p>
+                                </div>
+                            </div>
+                            
+                            <button class="container_button__button_media">
+                                <span class="material-symbols-outlined">thumb_up</span>
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
 </body>
