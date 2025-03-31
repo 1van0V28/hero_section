@@ -272,7 +272,6 @@ body {
     display: flex;
     overflow: hidden;
     width: 65vw;
-    border: 2px solid red;
 }
 
 
@@ -318,7 +317,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border: 2px solid blue;
 }
 
 
@@ -330,7 +328,6 @@ body {
     align-items: center;
     align-self: flex-end;
     column-gap: 0.5rem;
-    border: 2px solid green;
 }
 
 
@@ -375,5 +372,4 @@ body {
     row-gap: 0.5rem;
     flex-shrink: 1;
     height: 100%;
-    border: 2px solid red;
 }
