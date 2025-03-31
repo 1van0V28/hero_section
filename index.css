@@ -113,12 +113,12 @@ body {
 .container_button__button_action,
 .container_button__button_media,
 .container_button__button_like {
+    padding: 0.75rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     column-gap: 0.25rem;
-    padding: 0.75rem;
     border-radius: 2rem;
     font-size: 1.25rem;
     font-weight: 400;
@@ -239,6 +239,7 @@ body {
 .container__description {
     margin: 3.75vh 0;
     width: 45%;
+    word-break: break-all;
     font-size: 1.25rem;
     color: var(--grey-dark);
 }
@@ -268,30 +269,32 @@ body {
 
 
 .viewer_feedback {
+    display: flex;
     overflow: hidden;
-    width: 65%;
-    height: 32.5vh;
+    width: 65vw;
+    border: 2px solid red;
 }
 
 
 .viewer_feedback__scroll {
     display: flex;
-    height: 100%;
     flex-direction: row;
-    column-gap: 2.5%;
+    column-gap: 2.5vw;;
     transition: transform 1s ease;
 }
 
 
 .viewer_feedback__feedback {
+    overflow: hidden;
     padding: 2vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    flex-shrink: 0;
-    width: 48.75%;
+    word-break: break-all;
+    width: 31.125vw;
     height: 100%;
     background-color: var(--white);
+    border: 2px solid var(--grey);
     border-radius: 20px;
     transition: opacity 1s ease,
                 transform 1s ease;
@@ -315,18 +318,24 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    border: 2px solid blue;
 }
 
 
 .viewer_feedback__container_personal_info {
+    overflow: hidden;
+    padding: 0 1rem 0 0;
+    flex-shrink: 1;
     display: inline-flex;
     align-items: center;
     align-self: flex-end;
     column-gap: 0.5rem;
+    border: 2px solid green;
 }
 
 
 .viewer_feedback__avatar {
+    flex-shrink: 0;
     width: 5rem;
     height: 5rem;
     border-radius: 100%;
@@ -364,5 +373,7 @@ body {
     flex-direction: column;
     justify-content: center;
     row-gap: 0.5rem;
+    flex-shrink: 1;
     height: 100%;
+    border: 2px solid red;
 }

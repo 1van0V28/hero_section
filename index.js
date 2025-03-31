@@ -37,9 +37,9 @@ const changeButtonsSwitchStyle = function(buttonsSwitchList) {
 const handleButtonSwitchBackClick = function(viewerFeedbacksScroll, buttonsSwitchList) {
     if (!(POSITION_STATE === 0)) {
         const positionDelta = -1
-        const newPosition = POSITION_STATE * 51.125 - 51.125
+        const newPosition = POSITION_STATE * 33.625 - 33.625
 
-        viewerFeedbacksScroll.style.transform = `translateX(${-newPosition}%)`
+        viewerFeedbacksScroll.style.transform = `translateX(${-newPosition}vw)`
         POSITION_STATE -= 1
 
         changeVisibleFeedbacks(viewerFeedbacksList, positionDelta)
@@ -51,9 +51,9 @@ const handleButtonSwitchBackClick = function(viewerFeedbacksScroll, buttonsSwitc
 const handleButtonSwitchForwardClick = function(viewerFeedbacksScroll, buttonsSwitchList) {
     if (!(POSITION_STATE === NUMBER_FEEDBACKS - 2)) {
         const positionDelta = 1
-        const newPosition = POSITION_STATE * 51.125 + 51.125
+        const newPosition = POSITION_STATE * 33.625 + 33.625
 
-        viewerFeedbacksScroll.style.transform = `translateX(${-newPosition}%)`
+        viewerFeedbacksScroll.style.transform = `translateX(${-newPosition}vw)`
         POSITION_STATE += 1 
 
         changeVisibleFeedbacks(viewerFeedbacksList, positionDelta)
